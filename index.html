@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project Math Table</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/scripts.js" defer></script>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header>
+        <h1>Enter your choises to generate the Math Table</h1>
+    </header>
+    <main>
+      <section>
+          <form id="table-form">
+            <div class="form-control">
+              <label for="base">Base number</label>
+              <input type="number" name="base" id="base" placeholder="0" />
+            </div>
+            <div class="form-control">
+              <label for="multiplier">Multiplier number</label>
+              <input type="number" name="multiplier" id="multiplier" value="10" />
+            </div>
+            <input type="submit" value="Generate">
+          </form>
+      </section>
+      <section>
+          <h2>Math Tab result: <span></span></h2>
+          <div id="table-result">
+              <div id="table-operations">
+                  <p>Enter the numbers to generate the Math Table</p>
+                  <div class="row">
+                    <div class="operation">5x1</div>
+                    <div class="result">= 5</div>
+                  </div>
+                  <div class="row">
+                    <div class="operation">5x2</div>
+                    <div class="result">= 10</div>
+                  </div>
+              </div>
+          </div>
+      </section>
+    </main>
+  </body>
 </html>
+-
